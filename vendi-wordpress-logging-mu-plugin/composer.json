@@ -1,0 +1,5 @@
+{
+    "require": {
+        "inpsyde/wonolog": "^1.0"
+    }
+}
