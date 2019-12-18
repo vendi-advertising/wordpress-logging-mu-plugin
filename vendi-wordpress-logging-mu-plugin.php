@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
 
 $plugin_dir = __DIR__ . '/vendi-wordpress-logging-mu-plugin/';
 $boot_file = $plugin_dir . '/vendor/autoload.php';
-$logging_dir = $plugin_dir . '/.logs/';
+$logging_dir = $plugin_dir . '/.logs';
 
 if (!is_readable($boot_file)) {
     if (!defined('WP_DEBUG') || !WP_DEBUG) {
