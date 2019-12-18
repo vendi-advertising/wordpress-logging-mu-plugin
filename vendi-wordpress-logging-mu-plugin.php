@@ -21,6 +21,8 @@ if (!is_readable($boot_file)) {
     throw new RuntimeException('Please run composer install to enable global logging');
 }
 
+require_once $boot_file;
+
 if (!defined('Inpsyde\Wonolog\LOG')) {
     if (!defined('WP_DEBUG') || !WP_DEBUG) {
         return;
